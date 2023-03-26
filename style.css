@@ -1,0 +1,185 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  :root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+     --Dark-grayish-blue: hsl(227, 10%, 46%);
+     --Dark-gray: hsl(0, 0%, 59%);
+
+     --font-family: 'Kumbh Sans', sans-serif;
+
+  }
+
+  body{
+    background-color: var(--Dark-cyan);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+    font-family: var(--font-family);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+     right 48vw bottom 37vh,
+     left 54vw top 33vh
+    ;
+   
+  }
+
+  article{
+    position: relative;
+    background-color: white;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    
+   
+    
+  }
+
+  .img2{
+    margin-left: 120px;
+  }
+
+
+  
+
+  .img-top img{
+    position: absolute;
+    bottom: 30%;
+    right: 57%;
+    width: 1000px;
+  }
+
+  .img-bottom{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 1000px;
+    
+  }
+
+
+  .img2{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    padding: 3px;
+   
+  }
+  .img2 .image2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -52px;
+  }
+
+  .flex{
+    display: flex;
+    gap: 5%;
+    margin-top: -43px;
+    margin-left: 5em;
+    z-index: -1;
+    
+  }
+
+  .age{
+    margin-top: 8px;
+    color: var(--Dark-gray);
+  }
+
+  .location{
+    margin-left: 9rem;
+    color: var(--Dark-gray);
+  }
+
+  hr{
+    border: none;
+  border-bottom: 1px solid rgb(233, 219, 219);
+  margin-top: 2em;
+  }
+
+  .flexbox{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 1.888em;
+    position: relative;
+    color: var(--Very-dark-desaturated-blue);
+ 
+   
+   
+  }
+
+  p{
+    color: var(--Dark-gray);
+  }
+
+  @media only screen and (min-width:375px){
+    body{
+        background-color: var(--Dark-cyan);
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: auto;
+        font-family: var(--font-family);
+       
+      }
+  }
+
+
+  
+
+  
